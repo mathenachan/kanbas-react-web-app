@@ -4,13 +4,13 @@
             <td> <!--KANBAS NAVIGATION-->
                 <ul>
                     <li>
-                        <a href="kanbas/Account">Account</a>
+                        <a href="/public/kanbas/Account/AccountNavigation/index.html">Account</a>
                     </li>
                     <li>
                         <a href="#">Dashboard</a>
                     </li>
                     <li>
-                        <a href="kanbas/Courses">Courses</a>
+                        <a href="/public/kanbas/Courses/CourseNavigation/index.html">Courses</a>
                     </li>
                     <li>
                         <a href="#">Calendar</a>
@@ -38,7 +38,7 @@
                         <a href="#">Notifications</a>
                     </li>
                     <li>
-                        <a href="Profile">Profile</a>
+                        <a href="/public/kanbas/Account/AccountNavigation/Profile/index.html">Profile</a>
                     </li>
                     <li>
                         <a href="#">Files</a>
@@ -65,16 +65,45 @@
                 </ul>
             </td>
             <td>
-                <form action="edit.html">
-                    Jose Annunziato's Profile <hr>
-                    <button>Edit Profile</button>
-                    <h1>Jose Annunziato</h1>
-                    <h2>Contact</h2>
+                <form action="index.html">
+                    <h2>Mathena Chan</h2>
+                    Name:*<input value="Mathena Chan" />
+                    Pronouns:<select>
+                        <option>None</option>
+                    </select>
+                    <br /><br />
+                    Title:<input>
+                    <br /><br />
+                    <h3>Contact</h3>
                     No registered services, you can add some on the <a href="#">settings</a> page.
-                    <h2>Biography</h2>
-                    Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-                    <h2>Links</h2>
-                    <a href="#">YouTube</a>
+                    <br /><br />
+                    <h3>Biography</h3> <br /><br />
+                    Third year student at Northeastern studying Computer Science and Interaction Design.<br />
+                    <textarea>Third year student at Northeastern studying Computer Science and Interaction Design.
+                    </textarea>
+                    <br /><br />
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Youtube Links to an external site.</a></li>
+                    </ul>
+                    <table>
+                        <th>Title</th>
+                        <th></th>
+                        <th>URL</th>
+                        <th></th>
+                        <tr>
+                            <td><input value="Youtube" /></td>
+                            <td>→</td>
+                            <td><input value="https://www.youtube.com" /></td>
+                            <td><a href="#">Remove</a></td>
+                        </tr>
+                    </table>
+                    <button>Add another link</button><br />
+                    <button>Cancel</button>
+                    <button>Save Profile</button><br />
+                    <button>Edit Profile</button>
+                    <button>Cancel Editing</button>
+
                 </form>
             </td>
         </tr>
