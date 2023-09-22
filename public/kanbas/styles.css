@@ -1,3 +1,22 @@
 body {
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+a {
+    color: #b52828;
+}
+
+.kanbas-nav {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    flex-direction: row;
+    list-style-type: none;
+    width: 80px;
+}
+
+.nav-item {
+    flex-direction: row;
+    color: white;
 }
