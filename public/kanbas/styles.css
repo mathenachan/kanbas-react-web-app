@@ -5,14 +5,25 @@
 
 body {
     font-family: Lato, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    margin: 6px 0px;
+}
+
+h3 {
+    margin: 6px 0px;
+    padding: 12px 0px 0px;
 }
 
 a {
     color: var(--red);
+    text-decoration: none;
 }
 
 .kanbas-nav-container {
-    width: 80px;
+    width: 85px;
 }
 
 .kanbas-nav {
@@ -25,11 +36,16 @@ a {
     flex: 1 0 auto;
     flex-direction: column;
     list-style-type: none;
-    width: 80px;
+    width: 85px;
     text-align: center;
     margin: 0%;
     padding: 0%;
+    height: 100%;
 
+}
+
+.neu-logo {
+    width: 90px;
 }
 
 .nav-item {
@@ -48,14 +64,13 @@ a {
     flex-direction: row;
     font-size: 14px;
     font-weight: lighter;
+    width: 85px;
 
 }
 
-.nav-button-active {
+.nav-active {
     background-color: white;
-    border: none;
     color: var(--red);
-    width: 80px;
 }
 
 .col {
@@ -76,6 +91,8 @@ a {
 
 .second-nav-link {
     text-decoration: none;
+    padding: 8px 0px 8px 6px;
+    margin: 12px 0px;
 }
 
 .second-nav-link:hover {
@@ -84,8 +101,9 @@ a {
 }
 
 .active {
-    border-left: black;
-    border-width: 1px;
+    border-left: solid black;
+    color: black;
+    font-weight: bold;
 }
 
 .profile-header {
@@ -93,4 +111,10 @@ a {
     margin-top: 20px;
     font-size: 18px;
     min-height: 4.5rem;
+}
+
+.profile {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
 }

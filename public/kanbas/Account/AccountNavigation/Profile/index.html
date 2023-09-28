@@ -20,10 +20,10 @@
                 <ul class="kanbas-nav">
                     <li class="nav-item">
                         <button class="nav-button" onclick="location.href = '../../../Dashboard/index.html'">
-                            <img src="../../../../images/NU_CMYK_Notched-N_wordmark_RW.png" width="60px"> </button>
+                            <img src="../../../../images/NU_RGB_Notched-N_motto_RW.png" class="neu-logo"> </button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-button-active">
+                        <button class="nav-button nav-active">
                             <i class="far fa-user-circle fa-2x" style="color: grey"></i>
                             <div class="nav-text">Account</div>
                         </button>
@@ -88,12 +88,12 @@
             </div>
             <div class="row">
                 <!-- ACCOUNT NAV -->
-                <div class="col second-nav-container">
+                <div class="second-nav-container">
                     <ul class="second-nav">
                         <li class="second-nav-link-container">
                             <a class="second-nav-link" href="#">Notifications</a>
                         </li>
-                        <li class="second-nav-link-container-active">
+                        <li class="second-nav-link-container">
                             <a class="second-nav-link active" href="index.html">Profile</a>
                         </li>
                         <li class="second-nav-link-container">
@@ -120,17 +120,22 @@
                     </ul>
                 </div>
                 <!-- MAIN CONTENT -->
-                <div class="col">
-                    <form action="edit.html">
-                        <button>Edit Profile</button>
-                        <h1>Mathena Chan</h1>
-                        <h2>Contact</h2>
+                <div class="col profile">
+                    <i class="far fa-user-circle fa-8x"></i>
+                        
+                        <h2>Mathena Chan</h2>
+                        <h3>Contact</h3>
                         No registered services, you can add some on the <a href="#">settings</a> page.
-                        <h2>Biography</h2>
+                        <h3>Biography</h3>
                         Third year student at Northeastern studying Computer Science and Interaction Design.
-                        <h2>Links</h2>
+                        <h3>Links</h3>
                         <a href="#">YouTube</a>
-                    </form>
+                </div>
+                <div class="col">
+                    <button onclick="location.href='edit.html'">
+                        <i class="fa fa-pencil-alt"></i>
+                        Edit Profile
+                    </button>
                 </div>
             </div>
 

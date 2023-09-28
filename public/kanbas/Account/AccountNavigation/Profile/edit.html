@@ -5,75 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="../../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../../../styles.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-    <table border="0" width="100%">
-        <tbody>
-            <tr>
-                <td> <!--KANBAS NAVIGATION-->
-                    <ul>
-                        <li>
-                            <a href="../index.html">Account</a>
+    <div class="row">
+        <!-- KANBAS NAV -->
+        <div class="kanbas-nav-container">
+            <nav>
+                <ul class="kanbas-nav">
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '../../../Dashboard/index.html'">
+                            <img src="../../../../images/NU_RGB_Notched-N_motto_RW.png" class="neu-logo"> </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button nav-active">
+                            <i class="far fa-user-circle fa-2x" style="color: grey"></i>
+                            <div class="nav-text">Account</div>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="fas fa-tachometer-alt fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Dashboard</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button"
+                            onclick="location.href = '../../Courses/CourseNavigation/index.html'">
+                            <i class="fas fa-book fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Courses</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-calendar-alt fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Calendar</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="fas fa-inbox fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Inbox</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-clock fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">History</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="fas fa-desktop fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Studio</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-arrow-alt-circle-right fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Commons</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-question-circle fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Help</div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col">
+            <div class="profile-header">
+                Mathena Chan's Profile
+                <hr>
+            </div>
+            <div class="row">
+                <!-- ACCOUNT NAV -->
+                <div class="second-nav-container">
+                    <ul class="second-nav">
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">Notifications</a>
                         </li>
-                        <li>
-                            <a href="#">Dashboard</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link active" href="index.html">Profile</a>
                         </li>
-                        <li>
-                            <a href="../../../Courses/CourseNavigation/index.html">Courses</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">Files</a>
                         </li>
-                        <li>
-                            <a href="#">Calendar</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">Settings</a>
                         </li>
-                        <li>
-                            <a href="#">Inbox</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">ePortfolios</a>
                         </li>
-                        <li>
-                            <a href="#">History</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">Shared Content</a>
                         </li>
-                        <li>
-                            <a href="#">Studio</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">The Hub</a>
                         </li>
-                        <li>
-                            <a href="#">Commons</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">Qwickly Course Tools</a>
                         </li>
-                        <li>
-                            <a href="#">Help</a>
+                        <li class="second-nav-link-container">
+                            <a class="second-nav-link" href="#">Global Announcements</a>
                         </li>
                     </ul>
-                </td>
-                <td><!--ACCOUNT NAVIGATION-->
-                    <ul>
-                        <li>
-                            <a href="#">Notifications</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Profile</a>
-                        </li>
-                        <li>
-                            <a href="#">Files</a>
-                        </li>
-                        <li>
-                            <a href="#">Settings</a>
-                        </li>
-                        <li>
-                            <a href="#">ePortfolios</a>
-                        </li>
-                        <li>
-                            <a href="#">Shared Content</a>
-                        </li>
-                        <li>
-                            <a href="#">The Hub</a>
-                        </li>
-                        <li>
-                            <a href="#">Qwickly Course Tools</a>
-                        </li>
-                        <li>
-                            <a href="#">Global Announcements</a>
-                        </li>
-    
-                    </ul>
-                </td>
-                <td>
+                </div>
+                <!-- MAIN CONTENT -->
+                <div class="col profile">
                     <form>
                         <h2>Mathena Chan</h2>
                         Name:*<input value="Mathena Chan" />
@@ -115,9 +161,13 @@
                         <a href="index.html"><button>Cancel Editing</button></a>
     
                    
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
 </body>
 </html>
