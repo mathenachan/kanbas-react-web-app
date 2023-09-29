@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0">
     <title>Document</title>
     <link href="../../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
@@ -11,6 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
     <div class="row">
         <!-- KANBAS NAV -->
@@ -18,8 +20,10 @@
             <nav>
                 <ul class="kanbas-nav">
                     <li class="nav-item">
-                        <button class="nav-button" onclick="location.href = '../../../Dashboard/index.html'">
-                            <img src="../../../../images/NU_RGB_Notched-N_motto_RW.png" class="neu-logo"> </button>
+                        <button class="nav-button logo-container"
+                            onclick="location.href = '../../../Dashboard/index.html'">
+                            <img src="../../../../images/NU_RGB_Notched-N_motto_RW.png" class="neu-logo"> 
+                        </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button nav-active">
@@ -29,51 +33,51 @@
                     </li>
 
                     <li class="nav-item">
-                        <button class="nav-button" onclick="location.href = '#'">
-                            <i class="fas fa-tachometer-alt fa-2x" style="color: var(--red);"></i>
+                        <button class="nav-button" onclick="location.href = '../../../Dashboard/index.html'">
+                            <i class="fas fa-tachometer-alt fa-2x red"></i>
                             <div class="nav-text">Dashboard</div>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button"
                             onclick="location.href = '../../Courses/CourseNavigation/index.html'">
-                            <i class="fas fa-book fa-2x" style="color: var(--red);"></i>
+                            <i class="fas fa-book fa-2x red"></i>
                             <div class="nav-text">Courses</div>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button" onclick="location.href = '#'">
-                            <i class="far fa-calendar-alt fa-2x" style="color: var(--red);"></i>
+                            <i class="far fa-calendar-alt fa-2x red"></i>
                             <div class="nav-text">Calendar</div>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button" onclick="location.href = '#'">
-                            <i class="fas fa-inbox fa-2x" style="color: var(--red);"></i>
+                            <i class="fas fa-inbox fa-2x red"></i>
                             <div class="nav-text">Inbox</div>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button" onclick="location.href = '#'">
-                            <i class="far fa-clock fa-2x" style="color: var(--red);"></i>
+                            <i class="far fa-clock fa-2x red"></i>
                             <div class="nav-text">History</div>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button" onclick="location.href = '#'">
-                            <i class="fas fa-desktop fa-2x" style="color: var(--red);"></i>
+                            <i class="fas fa-desktop fa-2x red"></i>
                             <div class="nav-text">Studio</div>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button" onclick="location.href = '#'">
-                            <i class="far fa-arrow-alt-circle-right fa-2x" style="color: var(--red);"></i>
+                            <i class="far fa-arrow-alt-circle-right fa-2x red"></i>
                             <div class="nav-text">Commons</div>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-button" onclick="location.href = '#'">
-                            <i class="far fa-question-circle fa-2x" style="color: var(--red);"></i>
+                            <i class="far fa-question-circle fa-2x red"></i>
                             <div class="nav-text">Help</div>
                         </button>
                     </li>
@@ -120,47 +124,60 @@
                 </div>
                 <!-- MAIN CONTENT -->
                 <div class="col profile">
-                    <form>
-                        <h2>Mathena Chan</h2>
-                        Name:*<input value="Mathena Chan" />
-                        Pronouns:<select>
-                            <option>None</option>
-                        </select>
-                        <br /><br />
-                        Title:<input>
-                        <br /><br />
-                        <h3>Contact</h3>
-                        No registered services, you can add some on the <a href="#">settings</a> page.
-                        <br /><br />
-                        <h3>Biography</h3> <br /><br />
-                        Third year student at Northeastern studying Computer Science and Interaction Design.<br />
-                        <textarea>Third year student at Northeastern studying Computer Science and Interaction Design.
-                        </textarea>
-                        <br /><br />
-                        <h3>Links</h3>
-                        <ul>
-                            <li><a href="#">Youtube Links to an external site.</a></li>
-                        </ul>
-                        <table>
-                            <th>Title</th>
-                            <th></th>
-                            <th>URL</th>
-                            <th></th>
-                            <tr>
-                                <td><input value="Youtube" /></td>
-                                <td>→</td>
-                                <td><input value="https://www.youtube.com" /></td>
-                                <td><a href="#">Remove</a></td>
-                            </tr>
-                        </table>
-                        <button>Add another link</button><br />
-                        <button>Cancel</button>
-                        <button>Save Profile</button><br />
+                    <form action="index.html">
+                        <div class="edit-container">
+                            <i class="far fa-user-circle fa-8x grey"></i>
+                            <div class="name">
+                                <label for="name">Name:*</label>
+                                <input class="form-control" id="name" value="Mathena Chan" />
+                            </div>
+                            <div>
+                                <label for="pronouns">Pronouns:</label>
+                                <select class="name form-select" id="pronouns">
+                                    <option>None</option>
+                                </select>
+                            </div>
+                            <label for="title">Title:</label><input class="name form-control" id="title">
+                            <h3>Contact</h3>
+                            No registered services, you can add some on the <a href="#">settings</a> page.
+
+                            <h3>Biography</h3>
+                            <textarea class="form-control">Third year student at Northeastern studying Computer Science and Interaction Design.
+                            </textarea>
+
+                            <h3>Links</h3>
+
+                            <div class="row">
+                                <div class="col center">Title</div>
+                                <div class="col arrow"></div>
+                                <div class="col center">URL</div>
+                                <div class="col"></div>
+                            </div>
+
+                            <div class="row no-gutters">
+                                <div class="col"><input class="form-control" value="Youtube" /></div>
+                                <div class="col arrow">→</div>
+                                <div class="col"><input class="form-control" value="https://www.youtube.com" /></div>
+                                <div class="col"><a href="#">
+                                        Remove </a></div>
+                            </div>
+
+                            <button class="btn btn-small">Add another link</button>
+                            <hr>
+                            <div class="edit-action float-end">
+                                <button class="btn">Cancel</button>
+                                <button class="btn btn-primary">Save Profile</button>
+                            </div>
+                        </div>
+
                     </form>
-                        <a href="index.html"><button>Edit Profile</button></a>
-                        <a href="index.html"><button>Cancel Editing</button></a>
-    
-                   
+
+
+                </div>
+                <div class="col">
+                    <button class="btn" onclick="location.href='index.html'">
+                        <i class="fa fa-pencil-alt"></i>
+                        Cancel Editing</button></a>
                 </div>
             </div>
 
@@ -170,4 +187,5 @@
     </div>
 
 </body>
+
 </html>

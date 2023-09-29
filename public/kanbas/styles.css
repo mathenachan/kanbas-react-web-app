@@ -43,9 +43,15 @@ a {
     height: 100%;
 
 }
-
+.logo-container {
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 .neu-logo {
-    width: 90px;
+    width: 85px;
+    align-self: center;
 }
 
 .nav-item {
@@ -54,6 +60,14 @@ a {
     justify-content: center;
     margin: 5px 0px;
 
+}
+
+.red {
+    color: var(--red);
+}
+
+.grey {
+    color: grey;
 }
 
 .nav-button {
@@ -72,10 +86,10 @@ a {
     background-color: white;
     color: var(--red);
 }
-
+/* 
 .col {
     width: 80 px;
-}
+} */
 
 .second-nav-container {
     width: 192px;
@@ -107,14 +121,79 @@ a {
 }
 
 .profile-header {
-    margin: 0px 24px;
-    margin-top: 20px;
+    margin: 24px 0px 0px 24px;
     font-size: 18px;
-    min-height: 4.5rem;
+    /* min-height: 4.5rem; */
 }
 
 .profile {
     padding: 36px;
     display: flex;
     flex-direction: column;
+}
+
+.name {
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.arrow {
+    width: min-content;
+    flex: 0 0 0;
+    padding: 0px;
+}
+
+.btn {
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #eeeeee;
+}
+
+.btn-primary {
+    background: #d41b2c;
+    color: white;
+    border: 1px solid;
+    border-color: #B51726;
+}
+
+.btn-primary:hover {
+    background-color: #CA1A2A;
+    border-color: #B51726;
+
+}
+
+.btn-small {
+    padding: 2px 8px;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.edit-action {
+    margin: 20px 0px;
 }
