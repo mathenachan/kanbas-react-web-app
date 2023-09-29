@@ -9,8 +9,9 @@
     <link href="../../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     <link href="../../../styles.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -148,16 +149,21 @@
                             <h3>Links</h3>
 
                             <div class="row">
-                                <div class="col center">Title</div>
+                                <div class="col center">
+                                    <label for="title-link">Title</label>
+                                </div>
                                 <div class="col arrow"></div>
-                                <div class="col center">URL</div>
+                                <div class="col center">
+                                    <label for="url-link">URL</label>
+
+                                </div>
                                 <div class="col"></div>
                             </div>
 
                             <div class="row no-gutters">
-                                <div class="col"><input class="form-control" value="Youtube" /></div>
+                                <div class="col"><input class="form-control" id="title-link" value="Youtube" /></div>
                                 <div class="col arrow">→</div>
-                                <div class="col"><input class="form-control" value="https://www.youtube.com" /></div>
+                                <div class="col"><input class="form-control" id="url-link" value="https://www.youtube.com" /></div>
                                 <div class="col"><a href="#">
                                         Remove </a></div>
                             </div>

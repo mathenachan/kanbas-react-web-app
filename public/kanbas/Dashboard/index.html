@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <!-- KANBAS NAV -->
+        <div class="col kanbas-nav-container">
+            <nav>
+                <ul class="kanbas-nav">
+                    <li class="nav-item">
+                        <button class="nav-button logo-container">
+                            <img src="../../images/NU_RGB_Notched-N_motto_RW.png" class="neu-logo">
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button"
+                            onclick="location.href = '../Account/AccountNavigation/Profile/index.html'">
+                            <i class="far fa-user-circle fa-2x" style="color: white"></i>
+                            <div class="nav-text">Account</div>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-button  nav-active">
+                            <i class="fas fa-tachometer-alt fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Dashboard</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '../Courses/CourseNavigation/index.html'">
+                            <i class="fas fa-book fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Courses</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-calendar-alt fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Calendar</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="fas fa-inbox fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Inbox</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-clock fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">History</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="fas fa-desktop fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Studio</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-arrow-alt-circle-right fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Commons</div>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-button" onclick="location.href = '#'">
+                            <i class="far fa-question-circle fa-2x" style="color: var(--red);"></i>
+                            <div class="nav-text">Help</div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col dashboard">
+            <div class="dash-header">
+                Dashboard
+                <hr>
+            </div>
+            <div class="dash-body">
+                Published Courses (7)
+                <hr class="pub-course">
+                <div class="card-container d-flex flex-row flex-wrap">
+                    <div class="card-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                        <div class="card">
+                            <div class="card-img-top card1"></div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                <div class="card-title card1-title">CS4550 12631 Web Development...</div>
+                                <div class="section">CS4550.12631.202410</div>
+                                <div class="term">202410_1 Fall 2023 Semester Full Term</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 ">
+                        <div class="card">
+                            <div class="card-img-top card2"></div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                <div class="card-title card2-title">CS4550 19753 Web Development...</div>
+                                <div class="section">CS4550.19753.202410</div>
+                                <div class="term">202410_1 Fall 2023 Semester Full Term</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 ">
+                        <div class="card">
+                            <div class="card-img-top card3"></div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                <div class="card-title card3-title">CS5610 20040 Web Development...</div>
+                                <div class="section">CS5610.20040.202410</div>
+                                <div class="term">202410_2 Fall 2023 Semester Full Term</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 ">
+                        <div class="card">
+                            <div class="card-img-top card4"></div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                <div class="card-title card4-title">CS5610 41752 Web Development...</div>
+                                <div class="section">CS5610.41752.202410</div>
+                                <div class="term">202410_2 Summer 1 2023 Semester...</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 ">
+                        <div class="card">
+                            <div class="card-img-top card5"></div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                <div class="card-title card5-title">CS5610 31752 Web Development...</div>
+                                <div class="section">CS5610.31752.202410</div>
+                                <div class="term">202410_2 Fall 2022 Semester...</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

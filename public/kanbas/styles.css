@@ -5,7 +5,6 @@
 
 body {
     font-family: Lato, Helvetica, sans-serif;
-    font-weight: lighter;
 }
 
 h2 {
@@ -24,6 +23,7 @@ a {
 
 .kanbas-nav-container {
     width: 85px;
+    flex: none;
 }
 
 .kanbas-nav {
@@ -77,7 +77,7 @@ a {
     padding: 7px 0px;
     flex-direction: row;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 400;
     width: 85px;
 
 }
@@ -135,6 +135,10 @@ a {
 .name {
     flex-direction: column;
     margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
 }
 
 .center {
@@ -197,3 +201,119 @@ a {
 .edit-action {
     margin: 20px 0px;
 }
+
+.dash-header {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.dashboard {
+    padding: 24px;
+}
+
+.dash-body {
+    margin: 20px;
+    font-size: x-large;
+}
+
+.pub-course {
+    margin-top: 5px;
+}
+
+.card-container {
+    margin-top: 20px;
+}
+
+.card-col {
+    width: 262px;
+    margin: 0px 30px 30px 0px; 
+}
+
+.card {
+    width: 262px;
+}
+
+.card-img-top {
+    height: 146px;
+}
+
+.card1 {
+    background-color: chocolate;
+}
+
+.card2 {
+    background-color:darkcyan ;
+}
+
+.card3 {
+    background-color: darkgoldenrod;
+}
+
+.card4 {
+    background-color: darkolivegreen;
+}
+
+.card5 {
+    background-color: darkorchid;
+}
+
+.card6 {
+    background-color: darkslateblue;
+}
+
+.card7 {
+    background-color: darkblue;
+}
+
+.card-title {
+font-size: small;
+font-weight: bold;
+margin-bottom: 0;
+
+}
+
+.card-text {
+    color: #677179;
+}
+
+.card-text:hover {
+    text-decoration: underline var(--hoverColor);
+}
+
+.card1-title {
+    color: chocolate;
+}
+
+.card2-title {
+    color:darkcyan ;
+}
+
+.card3-title {
+    color: darkgoldenrod;
+}
+
+.card4-title {
+    color: darkolivegreen;
+}
+
+.card5-title {
+    color: darkorchid;
+}
+
+.card6-title {
+    color: darkslateblue;
+}
+
+.card7-title {
+    color: darkblue;
+}
+
+.section {
+    font-size: medium;
+}
+
+.term {
+    font-size: small;
+
+}
+
