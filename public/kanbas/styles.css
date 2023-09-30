@@ -50,6 +50,24 @@ a:hover {
 
 }
 
+.kanbas-nav-small {
+    min-height: 55px;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.kanbas-nav-small-text {
+    margin: auto;
+}
+
+.nav-hamburger {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
 .logo-container {
     height: 75px;
     align-items: center;
