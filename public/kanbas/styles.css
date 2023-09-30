@@ -62,11 +62,16 @@ a:hover {
     margin: auto;
 }
 
+.kanbas-nav-small-link:hover {
+    text-decoration: none;
+}
+
 .nav-hamburger {
     background-color: transparent;
     border: none;
     color: white;
 }
+
 
 .logo-container {
     height: 75px;
@@ -133,6 +138,10 @@ a:hover {
     text-decoration: none;
     padding: 8px 0px 8px 6px;
     margin: 12px 0px;
+}
+
+.second-nav-small-link-active {
+font-weight: bold;
 }
 
 .active {
@@ -339,6 +348,7 @@ label {
 
 .term {
     font-size: small;
+    font-weight: normal;
 
 }
 
@@ -358,6 +368,10 @@ label {
 
 .green-border {
     border-left: 5px solid green;
+}
+
+.green-border:hover {
+    background-color: #eef7ff;
 }
 
 .right-sidebar {
@@ -395,3 +409,10 @@ label {
 .coming-up-item {
     margin: 0px 0px 20px 15px;
 }
+
+.rounded-pill {
+    font-weight: normal;
+    color: black;
+    border:solid #2d3b45 .5px;
+}
+
