@@ -283,7 +283,7 @@ label {
 }
 
 .card-text:hover {
-    text-decoration: underline var(--hoverColor);
+    color: #677179;
 }
 
 .card1-title {
@@ -348,4 +348,30 @@ label {
 
 .fa-grip-vertical {
     padding-right: 10px;
+}
+
+.course-status-btn {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.course-status-opt {
+margin-top: 20px;
+}
+
+.coming-up {
+    margin-top: 30px;
+}
+.coming-up-title {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.coming-up-ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.coming-up-item {
+    margin: 0px 0px 20px 15px;
 }
