@@ -21,6 +21,12 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--hoverColor);
+    text-decoration: underline var(--hoverColor);
+
+}
+
 .kanbas-nav-container {
     width: 85px;
     flex: none;
@@ -43,12 +49,14 @@ a {
     height: 100%;
 
 }
+
 .logo-container {
     height: 75px;
     align-items: center;
     justify-content: center;
     display: flex;
 }
+
 .neu-logo {
     width: 85px;
     align-self: center;
@@ -64,6 +72,10 @@ a {
 
 .red {
     color: var(--red);
+}
+
+.green {
+    color: green;
 }
 
 .grey {
@@ -86,10 +98,6 @@ a {
     background-color: white;
     color: var(--red);
 }
-/* 
-.col {
-    width: 80 px;
-} */
 
 .second-nav-container {
     width: 192px;
@@ -109,21 +117,19 @@ a {
     margin: 12px 0px;
 }
 
-.second-nav-link:hover {
-    text-decoration: underline;
-    color: var(--hoverColor);
-}
-
 .active {
     border-left: solid black;
     color: black;
     font-weight: bold;
 }
 
-.profile-header {
-    margin: 24px 0px 0px 24px;
+.header {
+    margin: 24px 0px 0px 32px;
     font-size: 18px;
-    /* min-height: 4.5rem; */
+}
+
+.hamburger {
+    margin-right: 20px;
 }
 
 .profile {
@@ -161,7 +167,7 @@ label {
     display: inline-block;
     position: relative;
     padding: 8px 14px;
-    margin-bottom: 0;
+    margin: px;
     font-size: 16px;
     font-size: 1rem;
     line-height: 20px;
@@ -226,7 +232,7 @@ label {
 
 .card-col {
     width: 262px;
-    margin: 0px 30px 30px 0px; 
+    margin: 0px 30px 30px 0px;
 }
 
 .card {
@@ -242,7 +248,7 @@ label {
 }
 
 .card2 {
-    background-color:darkcyan ;
+    background-color: darkcyan;
 }
 
 .card3 {
@@ -266,9 +272,9 @@ label {
 }
 
 .card-title {
-font-size: small;
-font-weight: bold;
-margin-bottom: 0;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 0;
 
 }
 
@@ -285,7 +291,7 @@ margin-bottom: 0;
 }
 
 .card2-title {
-    color:darkcyan ;
+    color: darkcyan;
 }
 
 .card3-title {
@@ -317,3 +323,29 @@ margin-bottom: 0;
 
 }
 
+.breadcrumb {
+    margin-bottom: 0px;
+}
+
+.bc-course {
+    color: var(--red);
+}
+
+.list-group {
+    font-weight: bold;
+    margin: 15px 0px 0px;
+    padding: 9px;
+}
+
+.green-border {
+    border-left: 5px solid green;
+}
+
+.right-sidebar {
+    width: 288px;
+    padding: 24px;
+}
+
+.fa-grip-vertical {
+    padding-right: 10px;
+}
