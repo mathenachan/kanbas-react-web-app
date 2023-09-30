@@ -170,7 +170,7 @@ font-weight: bold;
     margin-bottom: 10px;
 }
 
-label {
+.profile-label {
     font-weight: bold;
 }
 
@@ -375,7 +375,7 @@ label {
 }
 
 .right-sidebar {
-    width: 288px;
+    width: 300px;
     padding: 24px;
 }
 
@@ -416,3 +416,6 @@ label {
     border:solid #2d3b45 .5px;
 }
 
+.grid-label {
+    text-align: right;
+}
