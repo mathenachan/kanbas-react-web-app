@@ -72,6 +72,9 @@ a:hover {
     color: white;
 }
 
+.nav-hamburger:hover {
+    color: white;
+}
 
 .logo-container {
     height: 75px;
