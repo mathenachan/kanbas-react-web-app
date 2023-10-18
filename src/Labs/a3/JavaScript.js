@@ -6,7 +6,7 @@ import TernaryOperator from "./TernaryOperator";
 import WorkingWithFunctions from "./WorkingWithFunctions";
 import WorkingWithArrays from "./WorkingWithArrays";
 import TemplateLiterals from "./TemplateLiterals";
-import House from "./house";
+import House from "./House";
 import Spread from "./Spread";
 import Destructing from "./Destructing";
 import FunctionDestructing from "./FunctionDestructing";
