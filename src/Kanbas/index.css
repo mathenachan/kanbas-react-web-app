@@ -3,6 +3,12 @@
     --hoverColor: rgb(139, 31, 31);
 }
 
+@font-face {
+    font-family: Lato, Helvetica, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'
+    );
+}
+
 body {
     font-family: Lato, Helvetica, sans-serif;
 }
@@ -16,15 +22,14 @@ h3 {
     padding: 12px 0px 0px;
 }
 
-a {
+.link {
     color: var(--red);
     text-decoration: none;
 }
 
-a:hover {
+.link:hover {
     color: var(--hoverColor);
     text-decoration: underline var(--hoverColor);
-
 }
 
 .kanbas-nav-container {
@@ -89,7 +94,7 @@ a:hover {
 }
 
 .nav-item {
-    flex-direction: row;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     margin: 5px 0px;
@@ -113,7 +118,7 @@ a:hover {
     border: none;
     color: white;
     padding: 7px 0px;
-    flex-direction: row;
+    /* flex-direction: column; */
     font-size: 14px;
     font-weight: 400;
     width: 85px;

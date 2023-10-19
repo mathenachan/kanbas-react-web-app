@@ -1,3 +1,4 @@
+import "./index.css"
 import KanbasNavigation from "./KanbasNavigation";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
