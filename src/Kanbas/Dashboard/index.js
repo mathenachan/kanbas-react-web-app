@@ -1,25 +1,31 @@
 import db from "../Database";
-import "./index.css";
+// import "./index.css";
 import { Link } from "react-router-dom";
 function Dashboard() {
   const courses = db.courses;
   return (
-    <div>
+    <div className="col m-5 dashboard">
       <h1>Dashboard</h1>
-      <div className="list-group">
+      <div className="row-cols-4 card-container d-flex flex-row flex-wrap">
         {courses.map((course, index) => (
-          <Link
-            key={index}
-            to={`/Kanbas/Courses/${course._id}`}
-            className="list-group-item"
-          >
-            {course.name}
-          </Link>
+          <div className="card-col">
+            <Link
+              key={index}
+              to={`/Kanbas/Courses/${course._id}`}
+              className="card"
+            >
+              <div className="card-img-top"></div>
+              <div className="card-body">
+                {course.name}<br/>
+                {course.startDate}
+              </div>
+            </Link>
+          </div>
         ))}
       </div>
-      <pre>
+      {/* <pre>
         <code>{JSON.stringify(courses, null, 2)}</code>
-      </pre>
+      </pre> */}
     </div>
   );
 }

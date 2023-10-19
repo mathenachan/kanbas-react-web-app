@@ -6,13 +6,17 @@ import Modules from "../Modules";
 import Home from "../Home";
 import Assignments from "../Assignments";
 import AssignmentEditor from "../Assignments/AssignmentEditor";
+import { FaBars } from "react-icons/fa";
 
 function Courses() {
   const { courseId } = useParams();
   const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
-      <h1>Courses {course.name}</h1>
+      <div className="d-flex align-items-center">
+        <FaBars className="hamburger red"/>
+        <div className="breadcrumb-item bc-course">{course.name}</div>
+      </div>
       <div className="row">
         <div className="col">
           <CourseNavigation />
