@@ -1,0 +1,424 @@
+:root {
+    --red: #b52828;
+    --hoverColor: rgb(139, 31, 31);
+}
+
+body {
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+h2 {
+    margin: 6px 0px;
+}
+
+h3 {
+    margin: 6px 0px;
+    padding: 12px 0px 0px;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hoverColor);
+    text-decoration: underline var(--hoverColor);
+
+}
+
+.kanbas-nav-container {
+    width: 85px;
+    flex: none;
+}
+
+.kanbas-nav {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    flex-direction: column;
+    list-style-type: none;
+    width: 85px;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+
+}
+
+.kanbas-nav-small {
+    min-height: 55px;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.kanbas-nav-small-text {
+    margin: auto;
+}
+
+.kanbas-nav-small-link:hover {
+    text-decoration: none;
+}
+
+.nav-hamburger {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.nav-hamburger:hover {
+    color: white;
+}
+
+.logo-container {
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.neu-logo {
+    width: 85px;
+    align-self: center;
+}
+
+.nav-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+
+}
+
+.red {
+    color: var(--red);
+}
+
+.green {
+    color: green;
+}
+
+.grey {
+    color: grey;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 7px 0px;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+    width: 85px;
+
+}
+
+.nav-active {
+    background-color: white;
+    color: var(--red);
+}
+
+.second-nav-container {
+    width: 192px;
+}
+
+.second-nav {
+    list-style: none;
+}
+
+.second-nav-link-container {
+    margin: 12px 0px;
+}
+
+.second-nav-link {
+    text-decoration: none;
+    padding: 8px 0px 8px 6px;
+    margin: 12px 0px;
+}
+
+.second-nav-small-link-active {
+font-weight: bold;
+}
+
+.active {
+    border-left: solid black;
+    color: black;
+    font-weight: bold;
+}
+
+.header {
+    margin: 24px 0px 0px 32px;
+    font-size: 18px;
+}
+
+.hamburger {
+    margin-right: 20px;
+}
+
+.profile {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.profile-label {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.arrow {
+    width: min-content;
+    flex: 0 0 0;
+    padding: 0px;
+}
+
+.btn {
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin: px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #eeeeee;
+}
+
+.btn-primary {
+    background: #d41b2c;
+    color: white;
+    border: 1px solid;
+    border-color: #B51726;
+}
+
+.btn-primary:hover {
+    background-color: #CA1A2A;
+    border-color: #B51726;
+
+}
+
+.btn-small {
+    padding: 2px 8px;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.edit-action {
+    margin: 20px 0px;
+}
+
+.dash-header {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.dashboard {
+    padding: 24px;
+    box-sizing: content-box;
+}
+
+.dash-body {
+    margin: 20px;
+    font-size: x-large;
+}
+
+.pub-course {
+    margin-top: 5px;
+}
+
+.card-container {
+    margin-top: 20px;
+}
+
+.card-col {
+    width: 262px;
+    margin: 0px 30px 30px 0px;
+}
+
+.card {
+    width: 262px;
+}
+
+.card-img-top {
+    height: 146px;
+}
+
+.card1 {
+    background-color: chocolate;
+}
+
+.card2 {
+    background-color: darkcyan;
+}
+
+.card3 {
+    background-color: darkgoldenrod;
+}
+
+.card4 {
+    background-color: darkolivegreen;
+}
+
+.card5 {
+    background-color: darkorchid;
+}
+
+.card6 {
+    background-color: darkslateblue;
+}
+
+.card7 {
+    background-color: darkblue;
+}
+
+.card-title {
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+.card-text {
+    color: #677179;
+}
+
+.card-text:hover {
+    color: #677179;
+}
+
+.card1-title {
+    color: chocolate;
+}
+
+.card2-title {
+    color: darkcyan;
+}
+
+.card3-title {
+    color: darkgoldenrod;
+}
+
+.card4-title {
+    color: darkolivegreen;
+}
+
+.card5-title {
+    color: darkorchid;
+}
+
+.card6-title {
+    color: darkslateblue;
+}
+
+.card7-title {
+    color: darkblue;
+}
+
+.section {
+    font-size: medium;
+}
+
+.term {
+    font-size: small;
+    font-weight: normal;
+
+}
+
+.breadcrumb {
+    margin-bottom: 0px;
+}
+
+.bc-course {
+    color: var(--red);
+}
+
+.list-group {
+    font-weight: bold;
+    margin: 15px 0px 0px;
+    padding: 9px;
+}
+
+.green-border {
+    border-left: 5px solid green;
+}
+
+.green-border:hover {
+    background-color: #eef7ff;
+}
+
+.right-sidebar {
+    width: 300px;
+    padding: 24px;
+}
+
+.fa-grip-vertical {
+    padding-right: 10px;
+}
+
+.course-status-btn {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.course-status-opt {
+    margin-top: 20px;
+}
+
+.coming-up {
+    margin-top: 30px;
+}
+
+.coming-up-title {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.coming-up-ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.coming-up-item {
+    margin: 0px 0px 20px 15px;
+}
+
+.rounded-pill {
+    font-weight: normal;
+    color: black;
+    border:solid #2d3b45 .5px;
+}
+
+.grid-label {
+    text-align: right;
+}
