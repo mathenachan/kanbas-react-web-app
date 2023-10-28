@@ -196,7 +196,7 @@ font-weight: bold;
     padding: 0px;
 }
 
-.btn {
+.wd-btn {
     background: #f5f5f5;
     color: #2d3b45;
     border: 1px solid;
@@ -224,7 +224,7 @@ font-weight: bold;
     background-color: #eeeeee;
 }
 
-.btn-primary {
+.wd-btn-primary {
     background: #d41b2c;
     color: white;
     border: 1px solid;

@@ -8,10 +8,9 @@ import Assignments from "../Assignments";
 import AssignmentEditor from "../Assignments/AssignmentEditor";
 import { FaBars } from "react-icons/fa";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
-  return (
+  const course = courses.find((course) => course._id === courseId);  return (
     <div>
       <div className="d-flex align-items-center">
         <FaBars className="hamburger red"/>
