@@ -3,21 +3,36 @@
     "_id": "RS101",
     "name": "Rocket Propulsion",
     "number": "RS4550",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15"
+    "section": "2023-01-10",
+    "term": "2023-05-15",
+    "color": "card1",
+    "textcolor": "card1-title"
   },
   {
     "_id": "RS102",
     "name": "Aerodynamics",
     "number": "RS4560",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15"
+    "section": "2023-01-10",
+    "term": "2023-05-15",
+    "color": "card2",
+    "textcolor": "card2-title"
   },
   {
     "_id": "RS103",
     "name": "Spacecraft Design",
     "number": "RS4570",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15"
+    "section": "2023-01-10",
+    "term": "202410_1 Fall 2023 Semester Full Term",
+    "color": "card3",
+    "textcolor": "card3-title"
+  },
+  {
+    "_id": "12631",
+    "name": "CS4550 19753 Web Development",
+    "number": "CS4550",
+    "section": "CS4550.12631.202410",
+    "term": "202410_1 Fall 2023 Semester Full Term",
+    "color": "card4",
+    "textcolor": "card4-title"
   }
 ]

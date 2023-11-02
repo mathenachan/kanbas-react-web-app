@@ -7,5 +7,9 @@
   { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
   { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
   { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
-  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" }
+  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
+
+  { "_id": "WDA1", "title": "A1 - ENV + HTML", "course": "CS4550" },
+  { "_id": "WDA2", "title": "A2 - CSS + BOOTSTRAP", "course": "CS4550" }
+
 ]

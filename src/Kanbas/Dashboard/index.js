@@ -24,15 +24,17 @@ function Dashboard({
       <div className="card-container d-flex flex-row flex-wrap">
         {courses.map((course, index) => (
           <div className="card-col">
-            <Link
-              key={index}
-              to={`/Kanbas/Courses/${course._id}`}
-              className="card"
-            >
-              <div className="card-img-top"></div>
+
+            <div className="card">
+
+              <div className={`card-img-top ${course.color}`}></div>
               <div className="card-body">
-                {course.name}<br />
-                {course.startDate}
+                <Link key={index}
+                  to={`/Kanbas/Courses/${course._id}`} className="wd-card-text">
+                  <div className={`wd-card-title ${course.textcolor}`}>{course.name}</div>
+                  <div className="section">{course.section}</div>
+                  <div className="term">{course.term}</div>
+                </Link>
                 <button
                   className="wd-btn " OnClick={(e) => {
                     e.preventDefault();
@@ -50,7 +52,7 @@ function Dashboard({
                   Edit
                 </button>
               </div>
-            </Link>
+            </div>
           </div>
         ))}
       </div>

@@ -140,6 +140,7 @@ h3 {
 
 .second-nav {
     list-style: none;
+    padding-left: 32px;
 }
 
 .second-nav-link-container {
@@ -284,7 +285,7 @@ font-weight: bold;
 }
 
 .card1 {
-    background-color: chocolate;
+    background-color: #d2691e;
 }
 
 .card2 {
@@ -311,19 +312,21 @@ font-weight: bold;
     background-color: darkblue;
 }
 
-.card-title {
+.wd-card-title {
     font-size: small;
     font-weight: bold;
     margin-bottom: 0;
 
 }
 
-.card-text {
+.wd-card-text {
     color: #677179;
+    text-decoration: none;
 }
 
-.card-text:hover {
+.wd-card-text:hover {
     color: #677179;
+    text-decoration: underline;
 }
 
 .card1-title {

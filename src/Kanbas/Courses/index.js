@@ -12,9 +12,12 @@ function Courses({ courses }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);  return (
     <div>
-      <div className="d-flex align-items-center">
-        <FaBars className="hamburger red"/>
-        <div className="breadcrumb-item bc-course">{course.name}</div>
+      <div className="header d-none d-md-block">
+        <div className="d-flex align-items-center">
+          <FaBars className="hamburger red"/>
+          <div className="breadcrumb-item bc-course">{course.name}</div>
+        </div>
+        <hr/>
       </div>
       <div className="row">
         <div className="col">
