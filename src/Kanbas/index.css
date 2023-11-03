@@ -221,7 +221,7 @@ font-weight: bold;
     user-select: none;
 }
 
-.btn:hover {
+.wd-btn:hover {
     background-color: #eeeeee;
 }
 
@@ -232,7 +232,7 @@ font-weight: bold;
     border-color: #B51726;
 }
 
-.btn-primary:hover {
+.wd-btn-primary:hover {
     background-color: #CA1A2A;
     border-color: #B51726;
 
@@ -254,7 +254,7 @@ font-weight: bold;
 }
 
 .dashboard {
-    padding: 24px;
+    /* padding: 24px; */
     box-sizing: content-box;
 }
 

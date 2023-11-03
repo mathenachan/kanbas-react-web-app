@@ -13,7 +13,7 @@ function AssignmentEditor() {
   };
   return (
     <div>
-      <h1>Assignment Editor!!! {assignment.title}</h1>
+      <h1>Assignment Editor {assignment.title}</h1>
       <input className="form-control" defaultValue={assignment.title} />
       <button onClick={handleSave} className="btn btn-success">
         Save

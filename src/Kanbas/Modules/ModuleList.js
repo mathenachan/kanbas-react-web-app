@@ -39,12 +39,14 @@ function ModuleList() {
           </button>
           <button className="wd-btn" onClick={() => dispatch(updateModule(module))}>Update</button>
           <input
+          className="form-control"
             value={module.name}
             onChange={(e) =>
               dispatch(setModule({ ...module, name: e.target.value }))
             }
           />
           <textarea
+          className="form-control"
             value={module.description}
             onChange={(e) =>
               dispatch(setModule({ ...module, description: e.target.value }))

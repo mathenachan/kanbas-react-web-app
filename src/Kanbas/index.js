@@ -12,10 +12,11 @@ function Kanbas() {
   const [courses, setCourses] = useState(db.courses);
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
-    term: "New Term", section: "New Section",
+    term: "New Term", section: "New Section", color: "card1", textcolor: "card1-title"
   });
   const addNewCourse = () => {
     setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
+    setCourse({ name: "" });
   };
   const deleteCourse = (courseId) => {
     setCourses(courses.filter((course) => course._id !== courseId));
@@ -30,13 +31,16 @@ function Kanbas() {
         }
       })
     );
+    setCourse({ name: "" });
   };
   return (
     <Provider store={store}>
     <div className="d-flex">
       <KanbasNavigation />
-      <div>
+      <div className="flex-fill">
         <Routes>
+        <Route path="/" element={<Navigate to="Dashboard" />} />
+
           <Route path="Account" element={<h1>Account</h1>} />
           <Route
             path="Dashboard"
