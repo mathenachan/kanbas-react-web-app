@@ -16,7 +16,6 @@ function Kanbas() {
   });
   const addNewCourse = () => {
     setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
-    setCourse({ name: "" });
   };
   const deleteCourse = (courseId) => {
     setCourses(courses.filter((course) => course._id !== courseId));
@@ -31,7 +30,6 @@ function Kanbas() {
         }
       })
     );
-    setCourse({ name: "" });
   };
   return (
     <Provider store={store}>
