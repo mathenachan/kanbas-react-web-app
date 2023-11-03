@@ -21,8 +21,8 @@ function Dashboard(
           <input value={course.term} className="form-control"
                  onChange={(e) => setCourse({ ...course, term: e.target.value }) } />
         </div>
-        <button className="wd-btn" OnClick={() => updateCourse(course)}>Update</button>
-        <button className="wd-btn" OnClick={addNewCourse}>Add</button>
+        <button className="wd-btn" onClick={() => updateCourse(course)}>Update</button>
+        <button className="wd-btn" onClick={addNewCourse}>Add</button>
         <div className="card-container d-flex flex-row flex-wrap">
           {courses.map((course, index) => (
             <div className="card-col">
@@ -36,7 +36,7 @@ function Dashboard(
                     <div className="term">{course.term}</div>
                   </Link>
                   <button
-                    className="wd-btn " OnClick={(e) => {
+                    className="wd-btn " onClick={(e) => {
                       e.preventDefault();
                       deleteCourse(course._id);
                     }}
@@ -44,7 +44,7 @@ function Dashboard(
                     Delete
                   </button>
                   <button
-                    className="wd-btn " OnClick={(e) => {
+                    className="wd-btn " onClick={(e) => {
                       e.preventDefault();
                       setCourse(course);
                     }}
