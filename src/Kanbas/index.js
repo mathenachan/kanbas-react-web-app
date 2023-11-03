@@ -11,31 +11,25 @@ import { Provider } from "react-redux";
 function Kanbas() {
   const [courses, setCourses] = useState(db.courses);
   const [course, setCourse] = useState({
-    name: "New Course",
-    number: "New Course Number",
-    startDate: new Date(),
-    endDate: new Date(),
+    name: "New Course",      number: "New Number",
+    term: "New Term", section: "New Section",
   });
-  const addCourse = () => {
-    setCourses([
-      { ...course, _id: new Date().getTime().toString() },
-      ...courses,
-    ]);
-    setCourse({ name: "" });
+  const addNewCourse = () => {
+    setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
   };
-  const deleteCourse = (course) => {
-    setCourses(courses.filter((c) => c._id !== course._id));
+  const deleteCourse = (courseId) => {
+    setCourses(courses.filter((course) => course._id !== courseId));
   };
-  const updateCourse = (course) => {
+  const updateCourse = () => {
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
           return course;
+        } else {
+          return c;
         }
-        return c;
       })
     );
-    setCourse({ name: "" });
   };
   return (
     <Provider store={store}>
@@ -48,14 +42,12 @@ function Kanbas() {
             path="Dashboard"
             element={
               <Dashboard
-                courses={courses}
-                setCourses={setCourses}
-                course={course}
-                setCourse={setCourse}
-                addCourse={addCourse}
-                deleteCourse={deleteCourse}
-                updateCourse={updateCourse}
-              />
+              courses={courses}
+              course={course}
+              setCourse={setCourse}
+              addNewCourse={addNewCourse}
+              deleteCourse={deleteCourse}
+              updateCourse={updateCourse}/>
             }
           />
           <Route

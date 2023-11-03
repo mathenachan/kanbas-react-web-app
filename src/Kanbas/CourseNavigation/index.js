@@ -5,7 +5,7 @@ function CourseNavigation() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   return (
-    <div className="second-nav-container">
+    <div className="second-nav-container" style={{ width: 192 }}>
       <div className="second-nav" style={{ width: 150 }}>
         {links.map((link, index) => (
           <div className="second-nav-link-container">

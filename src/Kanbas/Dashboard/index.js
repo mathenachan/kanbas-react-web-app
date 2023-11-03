@@ -1,14 +1,10 @@
 import "../index.css";
 import { Link } from "react-router-dom";
-function Dashboard({
-  addCourse,
-  deleteCourse,
-  updateCourse,
-  courses,
-  course,
-  setCourse,
-  setCourses,
-}) {
+function Dashboard(
+  { courses, course, setCourse, addNewCourse,
+    deleteCourse, updateCourse }
+  
+) {
   return (
     <div className="col m-5 dashboard">
       <h1>Dashboard</h1>
@@ -20,7 +16,7 @@ function Dashboard({
         }}
       />
       <button className="wd-btn" OnClick={() => updateCourse(course)}>Update</button>
-      <button className="wd-btn" OnClick={addCourse}>Add</button>
+      <button className="wd-btn" OnClick={addNewCourse}>Add</button>
       <div className="card-container d-flex flex-row flex-wrap">
         {courses.map((course, index) => (
           <div className="card-col">
@@ -38,7 +34,7 @@ function Dashboard({
                 <button
                   className="wd-btn " OnClick={(e) => {
                     e.preventDefault();
-                    deleteCourse(course);
+                    deleteCourse(course._id);
                   }}
                 >
                   Delete

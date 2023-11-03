@@ -19,11 +19,11 @@ function Courses({ courses }) {
         </div>
         <hr/>
       </div>
-      <div className="row">
-        <div className="col">
+      <div className="row g-0">
+        
           <CourseNavigation />
-        </div>
-        <div className="col">
+        
+        <div className="col d-flex flex-column px-4">
           <Routes>
             <Route path="Home" element={<Home />} />
             <Route path="Modules" element={<Modules />} />
