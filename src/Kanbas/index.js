@@ -62,9 +62,6 @@ function Kanbas() {
     setCourse({ name: "" });
   };
 
-
-
-
   // const addNewCourse = () => {
   //   setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
   // };

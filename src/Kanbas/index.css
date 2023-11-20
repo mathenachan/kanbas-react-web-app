@@ -3,6 +3,7 @@
 :root {
     --red: #b52828;
     --hoverColor: rgb(139, 31, 31);
+    font-family: Lato, Helvetica, sans-serif;
 }
 
 body {
