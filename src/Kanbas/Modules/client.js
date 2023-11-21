@@ -2,8 +2,8 @@ import axios from "axios";
 
 // const MODULES_URL = "http://localhost:4000/api/modules";
 // const COURSES_URL = "http://localhost:4000/api/courses";
-// const API_BASE = process.env.REACT_APP_API_BASE;
-const API_BASE = "http://localhost:4000/api";
+const API_BASE = process.env.REACT_APP_API_BASE;
+// const API_BASE = "http://localhost:4000/api";
 
 const MODULES_URL = `${API_BASE}/modules`;
 

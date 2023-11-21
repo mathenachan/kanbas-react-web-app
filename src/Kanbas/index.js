@@ -17,8 +17,8 @@ function Kanbas() {
     name: "New Course", number: "New Number",
     term: "New Term", section: "New Section", color: "card1", textcolor: "card1-title"
   });
-  const API_BASE = process.env.REACT_APP_API_BASE;  
-  // const API_BASE = "http://localhost:4000/api";
+  // const API_BASE = process.env.REACT_APP_API_BASE;  
+  const API_BASE = "http://localhost:4000/api";
 
   const URL =`${API_BASE}/courses`;
 
@@ -44,12 +44,12 @@ function Kanbas() {
       })
     );
     console.log(response);
-    setCourse({ name: "" });
+    // setCourse({});
   };
 
-  const deleteCourse = async (courseId) => {
+  const deleteCourse = async (course) => {
     const response = await axios.delete(
-      `${URL}/${courseId}`
+      `${URL}/${course}`
     );
     console.log(response);
     setCourses(courses.filter(
@@ -62,7 +62,7 @@ function Kanbas() {
       response.data,
       ...courses,
     ]);
-    setCourse({ name: "" });
+    // setCourse({});
   };
 
   // const addNewCourse = () => {
