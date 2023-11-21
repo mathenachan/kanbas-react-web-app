@@ -8,8 +8,9 @@ function WorkingWithArrays() {
         due: "2021-09-09",
         completed: false,
     });
-
-    const API = process.env.REACT_APP_BASE`/a5/todos`;
+// const API_BASE = "http://localhost:4000";
+const API_BASE = process.env.REACT_APP_BASE;
+    const API = `${API_BASE}/a5/todos`;
     const [todos, setTodos] = useState([]);
     const updateTodo = async () => {
         const response = await axios.put(

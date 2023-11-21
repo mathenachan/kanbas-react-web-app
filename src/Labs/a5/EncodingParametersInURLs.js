@@ -4,14 +4,16 @@ function EncodingParametersInURLs() {
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
   const [result, setResult] = useState(0);
+  // const API_BASE = "http://localhost:4000";
+  const API_BASE = process.env.REACT_APP_BASE;
   const fetchSum = async (a, b) => {
     const response = await
-      axios.get(process.env.REACT_APP_BASE`/a5/add/${a}/${b}`);
+      axios.get(`${API_BASE}/a5/add/${a}/${b}`);
     setResult(response.data);
   };
   const fetchSubtraction = async (a, b) => {
     const response = await axios.get(
-      process.env.REACT_APP_BASE`/a5/subtract/${a}/${b}`);
+      `${API_BASE}/a5/subtract/${a}/${b}`);
     setResult(response.data);
   };
 
@@ -25,7 +27,7 @@ function EncodingParametersInURLs() {
     //   })
     //   .error(() => {});
     try {
-      const response = await axios.get(process.env.REACT_APP_BASE`/a5/welcome`);
+      const response = await axios.get(`${API_BASE}/a5/welcome`);
       setWelcomeMessage(response.data);
     } catch (error) {
       console.log(error);
@@ -69,13 +71,13 @@ function EncodingParametersInURLs() {
 
       <h3>Query Parameters</h3>
       <a
-        href={process.env.REACT_APP_BASE`/a5/calculator?a=${a}&b=${b}&operation=add`}
+        href={`${API_BASE}/a5/calculator?a=${a}&b=${b}&operation=add`}
         className="btn btn-primary"
       >
         Add {a} + {b}
       </a>
       <a
-        href={process.env.REACT_APP_BASE`/a5/calculator?a=${a}&b=${b}&operation=subtract`}
+        href={`${API_BASE}/a5/calculator?a=${a}&b=${b}&operation=subtract`}
         className="btn btn-danger"
       >
         Subtract {a} - {b}
@@ -83,13 +85,13 @@ function EncodingParametersInURLs() {
 
       <h3>Path Parameters</h3>
       <a
-        href={process.env.REACT_APP_BASE`/a5/add/${a}/${b}`}
+        href={`${API_BASE}/a5/add/${a}/${b}`}
         className="btn btn-primary"
       >
         Add {a} + {b}
       </a>
       <a
-        href={process.env.REACT_APP_BASE`/a5/subtract/${a}/${b}`}
+        href={`${API_BASE}/a5/subtract/${a}/${b}`}
         className="btn btn-danger"
       >
         Subtract {a} - {b}

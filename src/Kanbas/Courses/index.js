@@ -12,6 +12,7 @@ import { FaBars } from "react-icons/fa";
 function Courses() {
   const { courseId } = useParams();
   const API_BASE = process.env.REACT_APP_API_BASE;
+  // const API_BASE = "http://localhost:4000";
   const URL = `${API_BASE}/courses`;
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
