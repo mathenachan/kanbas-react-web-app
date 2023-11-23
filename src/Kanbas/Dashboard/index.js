@@ -38,7 +38,7 @@ function Dashboard(
                   <button
                     className="wd-btn " onClick={(e) => {
                       e.preventDefault();
-                      deleteCourse(course._id);
+                      deleteCourse(course);
                     }}
                   >
                     Delete
