@@ -17,6 +17,10 @@ function Account() {
   return (
     <div className=" container w-50">
       <h1>Account</h1>
+      <Link
+        to="../signin">
+        Sign in
+      </Link>
       {account && (
         <div>
           <input className="form-control" type="password" value={account.password}
