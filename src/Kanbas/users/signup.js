@@ -9,7 +9,7 @@ function Signup() {
   const signup = async () => {
     try {
       await client.signup(credentials);
-      navigate("/Kanbas/Account");
+      navigate("/project/account");
     } catch (err) {
       setError(err.response.data.message);
     }
@@ -28,7 +28,7 @@ function Signup() {
         onChange={(e) => setCredentials({
           ...credentials,
           password: e.target.value })} />
-      <button onClick={signup}>
+      <button className="btn btn-primary" onClick={signup}>
         Signup
       </button>
     </div>

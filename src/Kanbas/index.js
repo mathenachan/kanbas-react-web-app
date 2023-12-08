@@ -92,9 +92,7 @@ function Kanbas() {
         <div className="flex-fill">
           <Routes>
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="/signin" element={<Signin />} />
-            <Route path="/Account" element={<Account/>} />
-            <Route path="/admin/users" element={<UserTable />} />
+            <Route path="Account" element={<h1>Account</h1>} />
             <Route
               path="Dashboard"
               element={
