@@ -77,7 +77,8 @@ function UserTable() {
             <td>
             <BsFillCheckCircleFill onClick={updateUser}
               className="me-2 text-success fs-1 text" />
-              <BsPlusCircleFill onClick={createUser}/>
+              <BsPlusCircleFill onClick={createUser}
+              className="me-2 text-primary fs-1 text" />
             </td>
 
           </tr>
